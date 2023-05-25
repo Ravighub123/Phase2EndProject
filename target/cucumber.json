@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,7 +11,212 @@
         "steps": [
           {
             "result": {
-              "duration": 6651929100,
+              "duration": 8666071600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepDefs.Loginstepdef1.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 324817800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username as \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefs.Loginstepdef1.i_enter_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181896600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter password as \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepDefs.Loginstepdef1.i_enter_password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 251857000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on login",
+            "match": {
+              "location": "stepDefs.Loginstepdef1.click_on_login()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-05-25T14:17:28.446Z",
+        "before": [
+          {
+            "result": {
+              "duration": 50777567200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks1.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-addto-cart-functionlity-of-swagslab;login-success-scenario-using-parameters",
+        "after": [
+          {
+            "result": {
+              "duration": 480375000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks1.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 79952400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click Add to cart in \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefs.Addtocartstepdef.i_click_Add_to_cart_in(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3120778000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click add to cart for product \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefs.Addtocartstepdef.i_click_add_to_cart_for_product(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67964800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be able to see the product as \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 39
+                }
+              ],
+              "location": "stepDefs.Addtocartstepdef.i_should_be_able_to_see_the_product_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Addtocart"
+          }
+        ]
+      }
+    ],
+    "name": "This feature will be used to test the addto cart functionlity of SwagsLab",
+    "description": "",
+    "id": "this-feature-will-be-used-to-test-the-addto-cart-functionlity-of-swagslab",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Addtocart.feature",
+    "tags": [
+      {
+        "name": "@Addtocart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-25T14:18:32.541Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2149425000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks1.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login Success Scenario using parameters",
+        "description": "",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-swagslab;login-success-scenario-using-parameters",
+        "after": [
+          {
+            "result": {
+              "duration": 467663900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefs.Hooks1.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12168630000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 2558025500,
+              "duration": 239416400,
               "status": "passed"
             },
             "line": 6,
@@ -41,7 +246,7 @@
           },
           {
             "result": {
-              "duration": 2316463600,
+              "duration": 248856600,
               "status": "passed"
             },
             "line": 7,
@@ -59,179 +264,72 @@
           },
           {
             "result": {
-              "duration": 467171100,
+              "duration": 328813700,
               "status": "passed"
             },
             "line": 8,
-            "name": "I click on Login button",
+            "name": "Click on login",
             "match": {
-              "location": "stepDefs.Loginstepdef1.i_click_on_Login_button()"
+              "location": "stepDefs.Loginstepdef1.click_on_login()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 136934200,
+              "duration": 111936500,
               "status": "passed"
             },
             "line": 9,
-            "name": "I should land on home page",
+            "name": "I should be able to login successfully",
             "match": {
-              "location": "stepDefs.Loginstepdef1.i_should_land_on_home_page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-05-22T17:01:12.784Z",
-        "before": [
-          {
-            "result": {
-              "duration": 59194917400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefs.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "Add the product to Cart",
-        "description": "",
-        "id": "this-feature-will-be-used-to-test-the-add-to-cart-functionality-of-swag-labs-application;add-the-product-to-cart",
-        "after": [
-          {
-            "result": {
-              "duration": 743740500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefs.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2285732600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "I click on the Product name as \"Sauce Labs Backpack\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Sauce Labs Backpack\"",
-                  "offset": 31
-                }
-              ],
-              "location": "stepDefs.Addtocartstepdef.i_click_on_the_Product_name_as(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2197108400,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I click on the Add to cart Button",
-            "match": {
-              "location": "stepDefs.Addtocartstepdef.i_click_on_the_Add_to_cart_Button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2201514200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "I click on Shopping cart link",
-            "match": {
-              "location": "stepDefs.Addtocartstepdef.i_click_on_shopping_cart_link()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2307804800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "I verify the item on cart page",
-            "match": {
-              "location": "stepDefs.Addtocartstepdef.i_verify_the_item_on_cart_page()"
+              "location": "stepDefs.Loginstepdef1.i_should_be_able_to_login_successfully()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@AddToCart"
+            "name": "@Login1"
           }
         ]
-      }
-    ],
-    "name": "This feature will be used to test the Add to Cart functionality of Swag Labs application",
-    "description": "",
-    "id": "this-feature-will-be-used-to-test-the-add-to-cart-functionality-of-swag-labs-application",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Addtocart.feature",
-    "tags": [
+      },
       {
-        "name": "@AddToCart",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2023-05-22T17:02:34.188Z",
+        "start_timestamp": "2023-05-25T14:18:48.281Z",
         "before": [
           {
             "result": {
-              "duration": 4733518500,
+              "duration": 1559215000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.setup()"
+              "location": "stepDefs.Hooks1.setup()"
             }
           }
         ],
-        "line": 6,
-        "name": "Login success scenario using parameters",
+        "line": 20,
+        "name": "Login Success Scenario using parameters",
         "description": "",
-        "id": "this-feature-will-be-used-to-test-the-login-functionality-of-swag-labs-application;login-success-scenario-using-parameters",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-swagslab;login-success-scenario-using-parameters;;2",
         "after": [
           {
             "result": {
-              "duration": 575668800,
+              "duration": 453739000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.tearDown()"
+              "location": "stepDefs.Hooks1.tearDown()"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7806239400,
+              "duration": 8019723300,
               "status": "passed"
             },
-            "line": 7,
+            "line": 12,
             "name": "I have launched the application",
             "match": {
               "location": "stepDefs.Loginstepdef1.i_have_launched_the_application()"
@@ -240,10 +338,10 @@
           },
           {
             "result": {
-              "duration": 2367138400,
+              "duration": 201530500,
               "status": "passed"
             },
-            "line": 8,
+            "line": 13,
             "name": "I enter username as \"standard_user\"",
             "match": {
               "arguments": [
@@ -258,15 +356,15 @@
           },
           {
             "result": {
-              "duration": 2288491900,
+              "duration": 126929200,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I enter password as \"secret_sauce\"",
+            "line": 14,
+            "name": "I enter password as \"1234\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"secret_sauce\"",
+                  "val": "\"1234\"",
                   "offset": 20
                 }
               ],
@@ -276,171 +374,66 @@
           },
           {
             "result": {
-              "duration": 481723100,
+              "duration": 117934900,
               "status": "passed"
-            },
-            "line": 10,
-            "name": "I click on Login button",
-            "match": {
-              "location": "stepDefs.Loginstepdef1.i_click_on_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 128925600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I should land on home page",
-            "match": {
-              "location": "stepDefs.Loginstepdef1.i_should_land_on_home_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Login"
-          },
-          {
-            "name": "@sanity"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-05-22T17:02:52.629Z",
-        "before": [
-          {
-            "result": {
-              "duration": 2845684300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefs.Hooks.setup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "Login Failure scenario using Scenario outline",
-        "description": "",
-        "id": "this-feature-will-be-used-to-test-the-login-functionality-of-swag-labs-application;login-failure-scenario-using-scenario-outline;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 472695300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepDefs.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027user-name\u0027]\"}\n  (Session info: chrome\u003d113.0.5672.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JRLDGJM\u0027, ip: \u0027192.168.29.82\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\lenovo\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59031}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9a26f61db6e983470eb66163ed1740bd\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027user-name\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefs.Loginstepdef1.i_enter_username_as(Loginstepdef1.java:23)\r\n\tat ✽.I enter username as \"standard_user\"(file:///C:/Users/lenovo/eclipse-workspace/Phase2Project/src/test/java/features/login1.feature:15)\r\n",
-              "duration": 3171797400,
-              "status": "failed"
             },
             "line": 15,
-            "name": "I enter username as \"standard_user\"",
+            "name": "Click on login",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepDefs.Loginstepdef1.i_enter_username_as(java.lang.String)"
+              "location": "stepDefs.Loginstepdef1.click_on_login()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 5072965300,
+              "status": "passed"
             },
             "line": 16,
-            "name": "I enter password as \"xyz@12345\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"xyz@12345\"",
-                  "offset": 20
-                }
-              ],
-              "location": "stepDefs.Loginstepdef1.i_enter_password_as(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 998500,
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "I click on Login button",
-            "match": {
-              "location": "stepDefs.Loginstepdef1.i_click_on_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2000300,
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "I should get the error message as \"Epic sadface: Username and password do not match any user in this service\"",
+            "name": "I should get error message \"Epic sadface: Username and password do not match any user in this service\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 34
+                  "offset": 27
                 }
               ],
-              "location": "stepDefs.Loginstepdef1.i_should_get_the_error_message_as(java.lang.String)"
+              "location": "stepDefs.Loginstepdef1.i_should_get_error_message(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
-          },
-          {
-            "name": "@regression"
+            "name": "@Login1"
           }
         ]
       },
       {
-        "start_timestamp": "2023-05-22T17:02:59.241Z",
+        "start_timestamp": "2023-05-25T14:19:03.866Z",
         "before": [
           {
             "result": {
-              "duration": 2680909900,
+              "duration": 1894926600,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.setup()"
+              "location": "stepDefs.Hooks1.setup()"
             }
           }
         ],
-        "line": 23,
-        "name": "Login Failure scenario using Scenario outline",
+        "line": 21,
+        "name": "Login Success Scenario using parameters",
         "description": "",
-        "id": "this-feature-will-be-used-to-test-the-login-functionality-of-swag-labs-application;login-failure-scenario-using-scenario-outline;;3",
+        "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-swagslab;login-success-scenario-using-parameters;;3",
         "after": [
           {
             "result": {
-              "duration": 514701100,
+              "duration": 426754000,
               "status": "passed"
             },
             "match": {
-              "location": "stepDefs.Hooks.tearDown()"
+              "location": "stepDefs.Hooks1.tearDown()"
             }
           }
         ],
@@ -449,11 +442,22 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@id\u003d\u0027user-name\u0027]\"}\n  (Session info: chrome\u003d113.0.5672.127)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-JRLDGJM\u0027, ip: \u0027192.168.29.82\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\\Users\\lenovo\\AppData\\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:59047}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 7e8e3e06d9df4426da91c4e567f6bced\n*** Element info: {Using\u003dxpath, value\u003d//input[@id\u003d\u0027user-name\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat stepDefs.Loginstepdef1.i_enter_username_as(Loginstepdef1.java:23)\r\n\tat ✽.I enter username as \"locked_out_user\"(file:///C:/Users/lenovo/eclipse-workspace/Phase2Project/src/test/java/features/login1.feature:15)\r\n",
-              "duration": 3053252800,
-              "status": "failed"
+              "duration": 12514843500,
+              "status": "passed"
             },
-            "line": 15,
+            "line": 12,
+            "name": "I have launched the application",
+            "match": {
+              "location": "stepDefs.Loginstepdef1.i_have_launched_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 243860200,
+              "status": "passed"
+            },
+            "line": 13,
             "name": "I enter username as \"locked_out_user\"",
             "match": {
               "arguments": [
@@ -468,10 +472,10 @@
           },
           {
             "result": {
-              "duration": 1998200,
-              "status": "skipped"
+              "duration": 228870600,
+              "status": "passed"
             },
-            "line": 16,
+            "line": 14,
             "name": "I enter password as \"secret_sauce\"",
             "match": {
               "arguments": [
@@ -486,53 +490,50 @@
           },
           {
             "result": {
-              "duration": 998700,
-              "status": "skipped"
+              "duration": 161908200,
+              "status": "passed"
             },
-            "line": 17,
-            "name": "I click on Login button",
+            "line": 15,
+            "name": "Click on login",
             "match": {
-              "location": "stepDefs.Loginstepdef1.i_click_on_Login_button()"
+              "location": "stepDefs.Loginstepdef1.click_on_login()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1998800,
-              "status": "skipped"
+              "duration": 5062107900,
+              "status": "passed"
             },
-            "line": 18,
-            "name": "I should get the error message as \"Epic sadface: Sorry, this user has been locked out.\"",
+            "line": 16,
+            "name": "I should get error message \"Epic sadface: Sorry, this user has been locked out.\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Epic sadface: Sorry, this user has been locked out.\"",
-                  "offset": 34
+                  "offset": 27
                 }
               ],
-              "location": "stepDefs.Loginstepdef1.i_should_get_the_error_message_as(java.lang.String)"
+              "location": "stepDefs.Loginstepdef1.i_should_get_error_message(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Login"
-          },
-          {
-            "name": "@regression"
+            "name": "@Login1"
           }
         ]
       }
     ],
-    "name": "This feature will be used to test the login functionality of Swag Labs application",
+    "name": "This feature will be used to test the login functionlity of SwagsLab",
     "description": "",
-    "id": "this-feature-will-be-used-to-test-the-login-functionality-of-swag-labs-application",
+    "id": "this-feature-will-be-used-to-test-the-login-functionlity-of-swagslab",
     "keyword": "Feature",
     "uri": "file:src/test/java/features/login1.feature",
     "tags": [
       {
-        "name": "@Login",
+        "name": "@Login1",
         "type": "Tag",
         "location": {
           "line": 1,

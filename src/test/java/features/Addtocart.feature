@@ -1,15 +1,13 @@
-@AddToCart
-Feature: This feature will be used to test the Add to Cart functionality of Swag Labs application
-
-  Background: 
+@Addtocart
+Feature: This feature will be used to test the addto cart functionlity of SwagsLab
+Background: 
     Given I have launched the application
     When I enter username as "standard_user"
     And I enter password as "secret_sauce"
-    And I click on Login button
-    Then I should land on home page
+    And Click on login
+    
 
-  Scenario: Add the product to Cart
-    When I click on the Product name as "Sauce Labs Backpack"
-    And I click on the Add to cart Button
-    And I click on Shopping cart link
-    Then I verify the item on cart page
+Scenario: Login Success Scenario using parameters
+    When I click Add to cart in "Sauce Labs Backpack"
+    And I click add to cart for product "Sauce Labs Backpack"
+   Then I should be able to see the product as "Sauce Labs Backpack"

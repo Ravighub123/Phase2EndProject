@@ -1,59 +1,63 @@
 package stepDefs;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import io.cucumber.java.en.*;
+
 import org.junit.Assert;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
 public class Loginstepdef1 {
-
-	WebDriver driver = Hooks.driver;
-
+	WebDriver driver = Hooks1.driver;
+	
 	@Given("I have launched the application")
 	public void i_have_launched_the_application() throws InterruptedException {
+	    // Write code here that turns the phrase above into concrete actions
 		driver.get("https://www.saucedemo.com/");
-		Thread.sleep(2000);
+		Thread.sleep(5000);	
+	    
 	}
-
 	@When("I enter username as {string}")
-	public void i_enter_username_as(String usernameVal) throws InterruptedException {
-		WebElement userName = driver.findElement(By.xpath("//input[@id='user-name']"));
-		userName.sendKeys(usernameVal);
-		Thread.sleep(2000);
+	public void i_enter_username_as(String UserName) {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement userName = driver.findElement(By.xpath("//input[@name='user-name']"));
+		userName.sendKeys(UserName);
 	}
 
 	@When("I enter password as {string}")
-	public void i_enter_password_as(String passwordVal) throws InterruptedException {
-		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-		password.sendKeys(passwordVal);
+	public void i_enter_password_as(String Password) {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
+		password.sendKeys(Password);
+	}
+
+	@When("Click on login")
+	public void click_on_login() {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement loginBtn = driver.findElement(By.xpath("//input[@name='login-button']"));
+		loginBtn.click();
+	}
+
+	@Then("I should be able to login successfully")
+	public void i_should_be_able_to_login_successfully() {
+	    // Write code here that turns the phrase above into concrete actions
+		
+		String expected_url ="https://www.saucedemo.com/inventory.html";
+		String actual_url = driver.getCurrentUrl();
+		Assert.assertEquals(expected_url, actual_url);;
+	    
+	}
+	@Then("I should get error message {string}")
+	public void i_should_get_error_message(String ExpError) throws InterruptedException {
 		Thread.sleep(2000);
-	}
-
-	@When("I click on Login button")
-	public void i_click_on_Login_button() {
-		WebElement loginButton = driver.findElement(By.xpath("//input[@id='login-button']"));
-		loginButton.click();
-	}
-
-	@Then("I should land on home page")
-	public void i_should_land_on_home_page() {
-		String homepageTitle = driver.getTitle();
-		String expectedTitle = "Swag Labs";
-		Assert.assertEquals(homepageTitle, expectedTitle);
-		System.out.println("Login Succesfull");
-	}
-
-	@Then("I should get the error message as {string}")
-	public void i_should_get_the_error_message_as(String expectedError) throws InterruptedException {
-		WebElement error = driver.findElement(By.xpath("//h3[@data-test='error']"));
-		Thread.sleep(1000);
-		String actualError = error.getText();
-		Thread.sleep(1000);
-		Assert.assertEquals(actualError, expectedError);
+		WebElement error = driver.findElement(By.xpath("//*[@data-test='error']"));
+		//System.out.println("Actual Error"+error.getText());
+		//System.out.println("Expected Error"+ExpError);
+		Thread.sleep(3000);
+		String ActError = error.getText();
+		Assert.assertEquals(ActError, ExpError);  
 	}
 
 }
-

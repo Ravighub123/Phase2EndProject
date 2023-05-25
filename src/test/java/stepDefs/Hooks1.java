@@ -7,7 +7,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Hooks {
+public class Hooks1 {
 
 	public static WebDriver driver;
 
@@ -16,7 +16,7 @@ public class Hooks {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 	}
 
 	@After
